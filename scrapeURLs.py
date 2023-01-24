@@ -30,3 +30,6 @@ class startScrape:
                 for i in it:
                     currentURL = 'https://neuromorpho.org/neuron_info.jsp?neuron_name=' + i.text
                     file.write(currentURL + '\n')
+                    
+ls = startScrape()
+ls.scrape()
