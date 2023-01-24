@@ -1,5 +1,5 @@
-#This file is meant to collect data from the website https://neuromorpho.org/byspecies.jsp#top for our training and testing data sets.
-#Sepcifically we are looking for human data sets
+#This module will use the URLs that were collected from the module scrapeURLs.py to actually collect training/testing data from individual neurons
+#Specifically, we'll use Selenium to open each URL and collect/record data to a CSV file
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
